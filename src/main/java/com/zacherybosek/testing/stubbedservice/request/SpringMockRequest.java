@@ -31,46 +31,46 @@ public interface SpringMockRequest extends MockRequest {
      * @return request
      */
     @Override
-    MockRequest giveResponse(String content);
+    SpringMockRequest giveResponse(String content);
 
     @Override
-    MockRequest giveResponse(String content, MediaType contentType);
+    SpringMockRequest giveResponse(String content, MediaType contentType);
 
     @Override
-    MockRequest giveResponse(String content, HttpStatus responseCode);
+    SpringMockRequest giveResponse(String content, HttpStatus responseCode);
 
     @Override
-    MockRequest giveResponse(String content, MediaType contentType, HttpStatus responseCode);
+    SpringMockRequest giveResponse(String content, MediaType contentType, HttpStatus responseCode);
 
     @Override
-    MockRequest withContentType(MediaType contentType);
+    SpringMockRequest withContentType(MediaType contentType);
 
     @Override
-    MockRequest withMethod(HttpMethod method);
+    SpringMockRequest withMethod(HttpMethod method);
 
     @Override
-    MockRequest withSleep(long sleepTime);
+    SpringMockRequest withSleep(long sleepTime);
 
     @Override
-    MockRequest withRegEx();
+    SpringMockRequest withRegEx();
 
     @Override
-    MockRequest withRequestLogSize(int requestLogSize);
+    SpringMockRequest withRequestLogSize(int requestLogSize);
 
     @Override
-    MockRequest withParams(FilterType parameterType);
+    SpringMockRequest withParams(FilterType parameterType);
 
     @Override
-    MockRequest withParams(MultiValueMap<String, String> parameters);
+    SpringMockRequest withParams(MultiValueMap<String, String> parameters);
 
     @Override
-    MockRequest withHeaders(MultiValueMap<String, String> headers);
+    SpringMockRequest withHeaders(MultiValueMap<String, String> headers);
 
     @Override
-    MockRequest withHeaders(FilterType headerType);
+    SpringMockRequest withHeaders(FilterType headerType);
 
     @Override
-    MockRequest verify(VerificationMode verifyMode);
+    SpringMockRequest verify(VerificationMode verifyMode);
 
     @Override
     ModelAndView invoke(HttpServletRequest request, HttpServletResponse response, HandlerMethod handlerMethod);
