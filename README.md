@@ -4,10 +4,11 @@
 ###Description
 The Stubbed Service Generator is a Java based integration testing library used to spin up a fully configurable REST endpoint on a port.
 It is used to simulate calls to a real service, rather than a mock, but that service is fully configurable for a number of testing scenarios.
-Whether you need to simulate something as trivial as yout application's response to a 404, or something more complex like handling latency, the Stubbed Service generator can help a developer test their endpoint calls using a real service.
+Whether testing something as trivial as an application's response to a 404, or something more complex like multiple calls to different endpoints with varying latency,
+the Stubbed Service generator can help a developer test their endpoint calls by invoking real, highly configurable, services.
 
 ###Syntax
-The Stubbed Service Generator is written to have a Mockito like syntax. This is so any Java developer can pick up the tool and use it in their testing suites with a minimal learning curve.
+The Stubbed Service Generator is written to have a Mockito like syntax. This is so any Java developer can pick up the tool and use it in their testing suites with a light learning curve.
 
 ##Sample Usage
 
